@@ -63,7 +63,7 @@
             box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
         }
         .text-shadow-sm {
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
         }
         /* Fallback background colors for missing images */
         .img-fallback {
@@ -80,27 +80,27 @@
     <!-- Navigation -->
     <header class="fixed w-full z-50 glass-nav transition-all duration-300" id="navbar">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-24">
+            <div class="flex justify-between items-center h-28">
                 <!-- Logo area -->
                 <div class="flex-shrink-0 flex items-center cursor-pointer" onclick="window.scrollTo(0,0)">
-                    <img class="h-16 w-auto object-contain" src="./assets/images/logo.png" alt="Asian Image Salon and Day Spa Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                    <span class="font-serif text-2xl font-bold tracking-wider text-spa-dark hidden ml-2">Asian Image</span>
+                    <img class="h-20 w-auto object-contain" src="./assets/images/logo.png" alt="Asian Image Salon and Day Spa Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <span class="font-serif text-3xl font-bold tracking-wider text-spa-dark hidden ml-3">Asian Image</span>
                 </div>
                 
                 <!-- Desktop Menu -->
-                <nav class="hidden md:flex space-x-6 lg:space-x-8 items-center">
-                    <a href="#about" class="text-sm uppercase tracking-widest text-gray-600 hover:text-gold-500 transition-colors">About</a>
-                    <a href="#services" class="text-sm uppercase tracking-widest text-gray-600 hover:text-gold-500 transition-colors">Services</a>
-                    <a href="#pricing" class="text-sm uppercase tracking-widest text-gray-600 hover:text-gold-500 transition-colors">Pricing</a>
-                    <a href="#specialties" class="text-sm uppercase tracking-widest text-gray-600 hover:text-gold-500 transition-colors">Specialties</a>
-                    <a href="#products" class="text-sm uppercase tracking-widest text-gray-600 hover:text-gold-500 transition-colors">Products</a>
-                    <a href="#contact" class="px-6 py-2 bg-gold-500 text-white text-sm uppercase tracking-widest hover:bg-gold-600 transition-colors rounded-sm">Book Now</a>
+                <nav class="hidden md:flex space-x-8 lg:space-x-10 items-center">
+                    <a href="#about" class="text-base font-semibold uppercase tracking-widest text-gray-700 hover:text-gold-500 transition-colors">About</a>
+                    <a href="#services" class="text-base font-semibold uppercase tracking-widest text-gray-700 hover:text-gold-500 transition-colors">Services</a>
+                    <a href="#pricing" class="text-base font-semibold uppercase tracking-widest text-gray-700 hover:text-gold-500 transition-colors">Pricing</a>
+                    <a href="#specialties" class="text-base font-semibold uppercase tracking-widest text-gray-700 hover:text-gold-500 transition-colors">Specialties</a>
+                    <a href="#products" class="text-base font-semibold uppercase tracking-widest text-gray-700 hover:text-gold-500 transition-colors">Products</a>
+                    <a href="#contact" class="px-8 py-3 bg-gold-500 text-white text-base font-bold uppercase tracking-widest hover:bg-gold-600 transition-colors rounded-lg shadow-sm">Book Now</a>
                 </nav>
 
                 <!-- Mobile menu button -->
                 <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-gold-500 focus:outline-none p-2">
-                        <i class="fas fa-bars text-2xl"></i>
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-gold-500 focus:outline-none p-3">
+                        <i class="fas fa-bars text-3xl"></i>
                     </button>
                 </div>
             </div>
@@ -108,53 +108,53 @@
 
         <!-- Mobile Menu Panel -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-lg">
-            <div class="px-4 pt-2 pb-6 space-y-1 text-center">
-                <a href="#about" class="block px-3 py-3 text-base uppercase tracking-widest text-gray-600 hover:bg-gray-50 hover:text-gold-500">About</a>
-                <a href="#services" class="block px-3 py-3 text-base uppercase tracking-widest text-gray-600 hover:bg-gray-50 hover:text-gold-500">Services</a>
-                <a href="#pricing" class="block px-3 py-3 text-base uppercase tracking-widest text-gray-600 hover:bg-gray-50 hover:text-gold-500">Pricing</a>
-                <a href="#specialties" class="block px-3 py-3 text-base uppercase tracking-widest text-gray-600 hover:bg-gray-50 hover:text-gold-500">Specialties</a>
-                <a href="#products" class="block px-3 py-3 text-base uppercase tracking-widest text-gray-600 hover:bg-gray-50 hover:text-gold-500">Products</a>
-                <a href="#contact" class="block px-3 py-3 mt-4 text-base uppercase tracking-widest bg-gold-500 text-white hover:bg-gold-600 mx-4 rounded-sm">Book Appointment</a>
+            <div class="px-4 pt-4 pb-8 space-y-2 text-center">
+                <a href="#about" class="block px-4 py-4 text-lg font-semibold uppercase tracking-widest text-gray-700 hover:bg-gray-50 hover:text-gold-500">About</a>
+                <a href="#services" class="block px-4 py-4 text-lg font-semibold uppercase tracking-widest text-gray-700 hover:bg-gray-50 hover:text-gold-500">Services</a>
+                <a href="#pricing" class="block px-4 py-4 text-lg font-semibold uppercase tracking-widest text-gray-700 hover:bg-gray-50 hover:text-gold-500">Pricing</a>
+                <a href="#specialties" class="block px-4 py-4 text-lg font-semibold uppercase tracking-widest text-gray-700 hover:bg-gray-50 hover:text-gold-500">Specialties</a>
+                <a href="#products" class="block px-4 py-4 text-lg font-semibold uppercase tracking-widest text-gray-700 hover:bg-gray-50 hover:text-gold-500">Products</a>
+                <a href="#contact" class="block px-4 py-4 mt-6 text-lg font-bold uppercase tracking-widest bg-gold-500 text-white hover:bg-gold-600 mx-4 rounded-lg shadow-md">Book Appointment</a>
             </div>
         </div>
     </header>
 
     <main>
         <!-- Hero Section -->
-        <section class="relative h-screen min-h-[600px] flex items-center justify-center bg-hero-pattern bg-cover bg-center bg-no-repeat bg-gray-900">
+        <section class="relative h-screen min-h-[700px] flex items-center justify-center bg-hero-pattern bg-cover bg-center bg-no-repeat bg-gray-900">
             <div class="absolute inset-0 bg-black/40"></div>
-            <div class="relative z-10 text-center px-4 max-w-4xl mx-auto mt-16">
-                <p class="text-gold-400 font-sans tracking-[0.2em] uppercase text-sm mb-4">Welcome to Excellence</p>
-                <h1 class="text-4xl md:text-6xl lg:text-7xl font-serif text-white mb-6 leading-tight text-shadow-sm">Asian Image<br><span class="text-3xl md:text-5xl italic font-light">Salon & Day Spa</span></h1>
-                <p class="text-gray-200 text-lg md:text-xl font-light mb-10 max-w-2xl mx-auto">Discover a sanctuary of beauty and relaxation in the heart of Nashville, Arkansas.</p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="#services" class="px-8 py-4 bg-transparent border border-white text-white hover:bg-white hover:text-spa-dark transition-all duration-300 uppercase tracking-widest text-sm">Explore Services</a>
-                    <a href="tel:+18708451999" class="px-8 py-4 bg-gold-500 text-white hover:bg-gold-600 border border-gold-500 transition-all duration-300 uppercase tracking-widest text-sm">Call to Book</a>
+            <div class="relative z-10 text-center px-4 max-w-5xl mx-auto mt-20">
+                <p class="text-gold-400 font-sans tracking-[0.25em] font-bold uppercase text-lg mb-6 text-shadow-sm">Welcome to Excellence</p>
+                <h1 class="text-5xl md:text-7xl lg:text-8xl font-serif text-white mb-8 leading-tight text-shadow-sm">Asian Image<br><span class="text-4xl md:text-6xl italic font-light">Salon & Day Spa</span></h1>
+                <p class="text-gray-100 text-xl md:text-2xl font-light mb-12 max-w-3xl mx-auto text-shadow-sm leading-relaxed">Discover a sanctuary of beauty and relaxation in the heart of Nashville, Arkansas.</p>
+                <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                    <a href="#services" class="px-10 py-4 bg-transparent border-2 border-white text-white hover:bg-white hover:text-spa-dark transition-all duration-300 uppercase tracking-widest text-base font-bold rounded-lg shadow-sm">Explore Services</a>
+                    <a href="tel:+18708451999" class="px-10 py-4 bg-gold-500 text-white hover:bg-gold-600 border-2 border-gold-500 transition-all duration-300 uppercase tracking-widest text-base font-bold rounded-lg shadow-sm">Call to Book</a>
                 </div>
             </div>
         </section>
 
         <!-- Welcome / About Section -->
-        <section id="about" class="py-24 bg-white">
+        <section id="about" class="py-32 bg-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
                     <div class="relative">
-                        <img src="./assets/images/waiting_room.png" alt="Spa Waiting Room" class="w-full h-[500px] object-cover rounded-sm shadow-xl z-10 relative" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'100%\' height=\'100%\'><rect width=\'100%\' height=\'100%\' fill=\'%23f3f4f6\'/><text x=\'50%\' y=\'50%\' font-family=\'sans-serif\' font-size=\'20\' fill=\'%239ca3af\' text-anchor=\'middle\'>Waiting Room Image</text></svg>'">
-                        <div class="absolute -bottom-8 -right-8 w-64 h-64 bg-spa-light z-0 hidden lg:block border border-gray-100"></div>
-                        <img src="./assets/images/fountain.png" alt="Spa Fountain" class="absolute -bottom-12 -right-12 w-48 h-48 object-cover rounded-sm shadow-lg z-20 border-4 border-white hidden lg:block" onerror="this.style.display='none'">
+                        <img src="./assets/images/waiting_room.png" alt="Spa Waiting Room" class="w-full h-[550px] object-cover rounded-lg shadow-2xl z-10 relative" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'100%\' height=\'100%\'><rect width=\'100%\' height=\'100%\' fill=\'%23f3f4f6\'/><text x=\'50%\' y=\'50%\' font-family=\'sans-serif\' font-size=\'20\' fill=\'%239ca3af\' text-anchor=\'middle\'>Waiting Room Image</text></svg>'">
+                        <div class="absolute -bottom-10 -right-10 w-72 h-72 bg-spa-light z-0 hidden lg:block border border-gray-200 rounded-lg"></div>
+                        <img src="./assets/images/fountain.png" alt="Spa Fountain" class="absolute -bottom-16 -right-16 w-56 h-56 object-cover rounded-lg shadow-xl z-20 border-8 border-white hidden lg:block" onerror="this.style.display='none'">
                     </div>
-                    <div>
-                        <h2 class="text-gold-500 font-sans tracking-widest uppercase text-sm mb-2">Our Sanctuary</h2>
-                        <h3 class="text-4xl font-serif text-spa-dark mb-6">A Premier Destination for Beauty & Wellness</h3>
-                        <p class="text-gray-600 leading-relaxed mb-6 font-light">
+                    <div class="lg:pl-8">
+                        <h2 class="text-gold-500 font-sans font-bold tracking-widest uppercase text-base mb-4">Our Sanctuary</h2>
+                        <h3 class="text-5xl font-serif text-spa-dark mb-8 leading-tight">A Premier Destination for Beauty & Wellness</h3>
+                        <p class="text-gray-700 text-lg leading-loose mb-8 font-light">
                             At Asian Image Salon and Day Spa, we believe in providing an unparalleled experience. From top-tier hair styling and flawless nail enhancements to rejuvenating skin care and massage therapy, our expert team is dedicated to your complete satisfaction.
                         </p>
-                        <p class="text-gray-600 leading-relaxed mb-8 font-light">
+                        <p class="text-gray-700 text-lg leading-loose mb-10 font-light">
                             We offer exclusive all-day packages perfect for birthdays, anniversaries, and special occasions. Treat yourself or a loved one to a day of absolute luxury.
                         </p>
-                        <div class="flex items-center space-x-4 border-l-2 border-gold-500 pl-4">
-                            <i class="fas fa-gift text-gold-500 text-2xl"></i>
-                            <p class="text-spa-dark font-serif italic text-lg">Gift Certificates Available for All Occasions</p>
+                        <div class="flex items-center space-x-6 border-l-4 border-gold-500 pl-6 bg-gray-50 p-6 rounded-r-lg">
+                            <i class="fas fa-gift text-gold-500 text-3xl"></i>
+                            <p class="text-spa-dark font-serif italic text-xl">Gift Certificates Available for All Occasions</p>
                         </div>
                     </div>
                 </div>
@@ -162,182 +162,194 @@
         </section>
 
         <!-- The Green Banana Experience -->
-        <section class="py-20 bg-tea-pattern bg-cover bg-center bg-fixed relative text-white text-center">
-            <div class="relative z-10 max-w-4xl mx-auto px-4">
-                <i class="fas fa-leaf text-gold-400 text-4xl mb-6"></i>
-                <h2 class="text-4xl md:text-5xl font-serif mb-4">The Green Banana</h2>
-                <h3 class="text-xl md:text-2xl font-light italic mb-8">"Our Bubble Tea is not just a drink, it's an experience!"</h3>
-                <p class="text-lg text-gray-200 mb-8 max-w-2xl mx-auto font-light leading-relaxed">
+        <section class="py-32 bg-tea-pattern bg-cover bg-center bg-fixed relative text-white text-center">
+            <div class="absolute inset-0 bg-spa-accent/80 mix-blend-multiply"></div>
+            <div class="absolute inset-0 bg-black/40"></div>
+            <div class="relative z-10 max-w-5xl mx-auto px-4">
+                <i class="fas fa-leaf text-gold-400 text-5xl mb-8"></i>
+                <h2 class="text-5xl md:text-6xl font-serif mb-6 text-shadow-sm">The Green Banana</h2>
+                <h3 class="text-2xl md:text-3xl font-light italic mb-10 text-gold-100">"Our Bubble Tea is not just a drink, it's an experience!"</h3>
+                <p class="text-xl text-gray-100 mb-12 max-w-3xl mx-auto font-light leading-loose text-shadow-sm">
                     Elevate your salon visit. We serve delicious, authentic Bubble Tea and a curated selection of Asian Snacks. Available Wednesday through Saturday, from 11:00 AM to closing.
                 </p>
-                <div class="inline-block border border-gold-400 p-4 bg-black/20 backdrop-blur-sm">
-                    <p class="font-sans tracking-widest uppercase text-sm text-gold-400">Hours of Operation</p>
-                    <p class="text-lg mt-1">Wed - Sat: 11:00 AM - Close</p>
+                <div class="inline-block border-2 border-gold-400 p-8 bg-black/30 backdrop-blur-md rounded-lg shadow-lg">
+                    <p class="font-sans font-bold tracking-widest uppercase text-base text-gold-400 mb-2">Hours of Operation</p>
+                    <p class="text-2xl font-serif text-white">Wed - Sat: 11:00 AM - Close</p>
                 </div>
             </div>
         </section>
 
         <!-- Services Menu -->
-        <section id="services" class="pt-24 pb-12 bg-spa-light">
+        <section id="services" class="pt-32 pb-20 bg-spa-light">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
-                    <h2 class="text-gold-500 font-sans tracking-widest uppercase text-sm mb-2">Our Capabilities</h2>
-                    <h3 class="text-4xl font-serif text-spa-dark">Comprehensive Care</h3>
-                    <div class="w-24 h-1 bg-gold-500 mx-auto mt-6"></div>
+                <div class="text-center mb-20">
+                    <h2 class="text-gold-500 font-sans font-bold tracking-widest uppercase text-base mb-4">Our Capabilities</h2>
+                    <h3 class="text-5xl font-serif text-spa-dark">Comprehensive Care</h3>
+                    <div class="w-32 h-1 bg-gold-500 mx-auto mt-8"></div>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                     <!-- Nail Care -->
-                    <div class="bg-white p-10 service-card border border-gray-100 relative overflow-hidden group">
-                        <div class="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
-                            <i class="fas fa-hand-sparkles text-6xl text-gold-500"></i>
+                    <div class="bg-white p-12 service-card border border-gray-100 rounded-lg relative overflow-hidden group shadow-sm">
+                        <div class="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
+                            <i class="fas fa-hand-sparkles text-7xl text-gold-500"></i>
                         </div>
-                        <h4 class="text-2xl font-serif text-spa-dark mb-4 border-b border-gray-100 pb-4">Nail Care</h4>
-                        <ul class="space-y-3 text-gray-600 font-light">
-                            <li class="flex justify-between items-center"><span>Spa Manicure</span> <span class="text-gold-500 text-xs"><i class="fas fa-circle"></i></span></li>
-                            <li class="flex justify-between items-center"><span>Spa Pedicure with Paraffin</span> <span class="text-gold-500 text-xs"><i class="fas fa-circle"></i></span></li>
-                            <li class="flex justify-between items-center"><span>Nail Enhancements</span> <span class="text-gold-500 text-xs"><i class="fas fa-circle"></i></span></li>
-                            <li class="flex justify-between items-center"><span>Natural Nails Overlay</span> <span class="text-gold-500 text-xs"><i class="fas fa-circle"></i></span></li>
-                            <li class="flex justify-between items-center"><span>Solar Nails & Color Tips</span> <span class="text-gold-500 text-xs"><i class="fas fa-circle"></i></span></li>
+                        <h4 class="text-3xl font-serif text-spa-dark mb-6 border-b-2 border-gray-100 pb-6">Nail Care</h4>
+                        <ul class="space-y-5 text-gray-700 text-lg font-light relative z-10">
+                            <li class="flex justify-between items-center"><span>Spa Manicure</span> <span class="text-gold-500 text-sm"><i class="fas fa-circle"></i></span></li>
+                            <li class="flex justify-between items-center"><span>Spa Pedicure with Paraffin</span> <span class="text-gold-500 text-sm"><i class="fas fa-circle"></i></span></li>
+                            <li class="flex justify-between items-center"><span>Nail Enhancements</span> <span class="text-gold-500 text-sm"><i class="fas fa-circle"></i></span></li>
+                            <li class="flex justify-between items-center"><span>Natural Nails Overlay</span> <span class="text-gold-500 text-sm"><i class="fas fa-circle"></i></span></li>
+                            <li class="flex justify-between items-center"><span>Solar Nails & Color Tips</span> <span class="text-gold-500 text-sm"><i class="fas fa-circle"></i></span></li>
                         </ul>
                     </div>
 
                     <!-- Wellness & Body -->
-                    <div class="bg-white p-10 service-card border border-gray-100 relative overflow-hidden group">
-                        <div class="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
-                            <i class="fas fa-spa text-6xl text-gold-500"></i>
+                    <div class="bg-white p-12 service-card border border-gray-100 rounded-lg relative overflow-hidden group shadow-sm">
+                        <div class="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
+                            <i class="fas fa-spa text-7xl text-gold-500"></i>
                         </div>
-                        <h4 class="text-2xl font-serif text-spa-dark mb-4 border-b border-gray-100 pb-4">Wellness & Body</h4>
-                        <ul class="space-y-3 text-gray-600 font-light">
-                            <li class="flex justify-between items-center"><span>Professional Massage</span> <span class="text-gold-500 text-xs"><i class="fas fa-circle"></i></span></li>
-                            <li class="flex justify-between items-center"><span>Ear Candling</span> <span class="text-gold-500 text-xs"><i class="fas fa-circle"></i></span></li>
-                            <li class="flex justify-between items-center"><span>Permanent Cosmetic Tattoo</span> <span class="text-gold-500 text-xs"><i class="fas fa-circle"></i></span></li>
-                            <li class="flex justify-between items-center"><span>All-Day Packages</span> <span class="text-gold-500 text-xs"><i class="fas fa-circle"></i></span></li>
+                        <h4 class="text-3xl font-serif text-spa-dark mb-6 border-b-2 border-gray-100 pb-6">Wellness & Body</h4>
+                        <ul class="space-y-5 text-gray-700 text-lg font-light relative z-10">
+                            <li class="flex justify-between items-center"><span>Professional Massage</span> <span class="text-gold-500 text-sm"><i class="fas fa-circle"></i></span></li>
+                            <li class="flex justify-between items-center"><span>Ear Candling</span> <span class="text-gold-500 text-sm"><i class="fas fa-circle"></i></span></li>
+                            <li class="flex justify-between items-center"><span>Permanent Cosmetic Tattoo</span> <span class="text-gold-500 text-sm"><i class="fas fa-circle"></i></span></li>
+                            <li class="flex justify-between items-center"><span>All-Day Packages</span> <span class="text-gold-500 text-sm"><i class="fas fa-circle"></i></span></li>
                         </ul>
                     </div>
 
                     <!-- Facial Treatments -->
-                    <div class="bg-white p-10 service-card border border-gray-100 relative overflow-hidden group">
-                        <div class="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
-                            <i class="fas fa-smile-beam text-6xl text-gold-500"></i>
+                    <div class="bg-white p-12 service-card border border-gray-100 rounded-lg relative overflow-hidden group shadow-sm">
+                        <div class="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
+                            <i class="fas fa-smile-beam text-7xl text-gold-500"></i>
                         </div>
-                        <h4 class="text-2xl font-serif text-spa-dark mb-4 border-b border-gray-100 pb-4">Facial Treatments</h4>
-                        <ul class="space-y-3 text-gray-600 font-light mb-4">
-                            <li class="flex justify-between items-center"><span>Non-Surgical Face Lift</span> <span class="text-gold-500 text-xs"><i class="fas fa-circle"></i></span></li>
-                            <li class="flex justify-between items-center font-medium text-spa-dark mt-4">European Facials</li>
+                        <h4 class="text-3xl font-serif text-spa-dark mb-6 border-b-2 border-gray-100 pb-6">Facial Treatments</h4>
+                        <ul class="space-y-5 text-gray-700 text-lg font-light mb-6 relative z-10">
+                            <li class="flex justify-between items-center"><span>Non-Surgical Face Lift</span> <span class="text-gold-500 text-sm"><i class="fas fa-circle"></i></span></li>
+                            <li class="flex justify-between items-center font-bold text-spa-dark mt-6">European Facials</li>
                         </ul>
-                        <p class="text-sm text-gray-500 leading-relaxed italic border-l-2 border-gray-200 pl-3">
-                            Featuring Dermatek technology. Vacuum and suction out deeply embedded dirt, grease, and impurities. Clinically improves skin elasticity and reduces micro-wrinkles.
-                        </p>
+                        <div class="bg-gray-50 p-5 rounded-lg border-l-4 border-gold-400 relative z-10">
+                            <p class="text-base text-gray-600 leading-relaxed italic">
+                                Featuring Dermatek technology. Vacuum and suction out deeply embedded dirt, grease, and impurities. Clinically improves skin elasticity and reduces micro-wrinkles.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Detailed Pricing Menu Section -->
-        <section id="pricing" class="py-20 bg-white">
+        <section id="pricing" class="py-24 bg-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
-                    <h2 class="text-gold-500 font-sans tracking-widest uppercase text-sm mb-2">Spa Menu</h2>
-                    <h3 class="text-4xl font-serif text-spa-dark">Rates & Services</h3>
-                    <div class="w-24 h-1 bg-gold-500 mx-auto mt-6"></div>
+                <div class="text-center mb-20">
+                    <h2 class="text-gold-500 font-sans font-bold tracking-widest uppercase text-base mb-4">Spa Menu</h2>
+                    <h3 class="text-5xl font-serif text-spa-dark">Rates & Services</h3>
+                    <div class="w-32 h-1 bg-gold-500 mx-auto mt-8"></div>
                 </div>
 
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
                     
                     <!-- Column 1: Facials & Massage -->
-                    <div>
-                        <div class="flex items-center mb-8 border-b border-gray-200 pb-4">
-                            <i class="fas fa-spa text-2xl text-gold-500 mr-4"></i>
-                            <h4 class="text-2xl font-serif text-spa-dark">Facials & Massage Therapies</h4>
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-100 p-8 md:p-12">
+                        <div class="flex items-center mb-10 border-b-2 border-gray-100 pb-6">
+                            <div class="bg-spa-light p-4 rounded-full mr-6">
+                                <i class="fas fa-spa text-3xl text-gold-500"></i>
+                            </div>
+                            <h4 class="text-3xl font-serif text-spa-dark">Facials & Massage Therapies</h4>
                         </div>
                         
-                        <ul class="space-y-4">
-                            <li class="flex justify-between items-center border-b border-gray-100 py-2">
-                                <span class="text-gray-700 tracking-wide font-light">Dermatek Facial</span>
-                                <span class="text-gold-600 font-serif text-lg">$75.00</span>
+                        <ul class="space-y-2">
+                            <li class="flex justify-between items-center border-b border-gray-100 py-4 hover:bg-gray-50 transition-colors px-2 rounded-lg">
+                                <span class="text-gray-800 text-lg tracking-wide font-medium">Dermatek Facial</span>
+                                <span class="text-gold-600 font-serif text-xl font-bold">$75.00</span>
                             </li>
-                            <li class="flex justify-between items-center border-b border-gray-100 py-2">
-                                <span class="text-gray-700 tracking-wide font-light">Power Paraffin Facial</span>
-                                <span class="text-gold-600 font-serif text-lg">$75.00</span>
+                            <li class="flex justify-between items-center border-b border-gray-100 py-4 hover:bg-gray-50 transition-colors px-2 rounded-lg">
+                                <span class="text-gray-800 text-lg tracking-wide font-medium">Power Paraffin Facial</span>
+                                <span class="text-gold-600 font-serif text-xl font-bold">$75.00</span>
                             </li>
-                            <li class="flex justify-between items-center border-b border-gray-100 py-2">
-                                <span class="text-gray-700 tracking-wide font-light">Acne Facial</span>
-                                <span class="text-gold-600 font-serif text-lg">$85.00</span>
+                            <li class="flex justify-between items-center border-b border-gray-100 py-4 hover:bg-gray-50 transition-colors px-2 rounded-lg">
+                                <span class="text-gray-800 text-lg tracking-wide font-medium">Acne Facial</span>
+                                <span class="text-gold-600 font-serif text-xl font-bold">$85.00</span>
                             </li>
-                            <li class="flex justify-between items-center border-b border-gray-100 py-2">
-                                <span class="text-gray-700 tracking-wide font-light">Non-Surgical Facial</span>
-                                <span class="text-gold-600 font-serif italic text-sm">Consultation Required</span>
+                            <li class="flex justify-between items-center border-b border-gray-100 py-4 hover:bg-gray-50 transition-colors px-2 rounded-lg">
+                                <span class="text-gray-800 text-lg tracking-wide font-medium">Non-Surgical Facial</span>
+                                <span class="text-gold-600 font-serif italic text-base bg-gold-50 px-3 py-1 rounded-full">Consultation Required</span>
                             </li>
-                            <li class="flex justify-between items-center border-b border-gray-100 py-2">
-                                <span class="text-gray-700 tracking-wide font-light">Pressure Point Massage</span>
-                                <span class="text-gold-600 font-serif text-lg">$95.00</span>
+                            <li class="flex justify-between items-center border-b border-gray-100 py-4 hover:bg-gray-50 transition-colors px-2 rounded-lg">
+                                <span class="text-gray-800 text-lg tracking-wide font-medium">Pressure Point Massage</span>
+                                <span class="text-gold-600 font-serif text-xl font-bold">$95.00</span>
                             </li>
-                            <li class="flex justify-between items-center border-b border-gray-100 py-2">
-                                <span class="text-gray-700 tracking-wide font-light">Shoulder and Low Back Massage</span>
-                                <span class="text-gold-600 font-serif text-lg">$45.00</span>
+                            <li class="flex justify-between items-center border-b border-gray-100 py-4 hover:bg-gray-50 transition-colors px-2 rounded-lg">
+                                <span class="text-gray-800 text-lg tracking-wide font-medium">Shoulder & Low Back Massage</span>
+                                <span class="text-gold-600 font-serif text-xl font-bold">$45.00</span>
                             </li>
-                            <li class="flex justify-between items-center border-b border-gray-100 py-2">
-                                <span class="text-gray-700 tracking-wide font-light">Half Hour Massage</span>
-                                <span class="text-gold-600 font-serif text-lg">$45.00</span>
+                            <li class="flex justify-between items-center border-b border-gray-100 py-4 hover:bg-gray-50 transition-colors px-2 rounded-lg">
+                                <span class="text-gray-800 text-lg tracking-wide font-medium">Half Hour Massage</span>
+                                <span class="text-gold-600 font-serif text-xl font-bold">$45.00</span>
                             </li>
-                            <li class="flex justify-between items-center border-b border-gray-100 py-2">
-                                <span class="text-gray-700 tracking-wide font-light">Herbal Body Polish</span>
-                                <span class="text-gold-600 font-serif text-lg">$95.00</span>
+                            <li class="flex justify-between items-center border-b border-gray-100 py-4 hover:bg-gray-50 transition-colors px-2 rounded-lg">
+                                <span class="text-gray-800 text-lg tracking-wide font-medium">Herbal Body Polish</span>
+                                <span class="text-gold-600 font-serif text-xl font-bold">$95.00</span>
                             </li>
-                            <li class="flex justify-between items-center border-b border-gray-100 py-2">
-                                <span class="text-gray-700 tracking-wide font-light">Ear Candling</span>
-                                <span class="text-gold-600 font-serif text-lg">$60.00</span>
+                            <li class="flex justify-between items-center py-4 hover:bg-gray-50 transition-colors px-2 rounded-lg">
+                                <span class="text-gray-800 text-lg tracking-wide font-medium">Ear Candling</span>
+                                <span class="text-gold-600 font-serif text-xl font-bold">$60.00</span>
                             </li>
                         </ul>
                     </div>
 
                     <!-- Column 2: Cosmetic Tattooing -->
-                    <div>
-                        <div class="flex items-center mb-8 border-b border-gray-200 pb-4">
-                            <i class="fas fa-eye text-2xl text-gold-500 mr-4"></i>
-                            <h4 class="text-2xl font-serif text-spa-dark">Permanent Cosmetic Tattooing</h4>
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-100 p-8 md:p-12 flex flex-col h-full">
+                        <div class="flex items-center mb-10 border-b-2 border-gray-100 pb-6">
+                            <div class="bg-spa-light p-4 rounded-full mr-6">
+                                <i class="fas fa-eye text-3xl text-gold-500"></i>
+                            </div>
+                            <h4 class="text-3xl font-serif text-spa-dark">Permanent Cosmetic Tattooing</h4>
                         </div>
                         
-                        <ul class="space-y-4 mb-8">
-                            <li class="flex justify-between items-center border-b border-gray-100 py-2">
-                                <span class="text-gray-700 tracking-wide font-light">Eyebrows</span>
-                                <span class="text-gold-600 font-serif text-lg">$500.00</span>
+                        <ul class="space-y-2 mb-10 flex-grow">
+                            <li class="flex justify-between items-center border-b border-gray-100 py-4 hover:bg-gray-50 transition-colors px-2 rounded-lg">
+                                <span class="text-gray-800 text-lg tracking-wide font-medium">Eyebrows</span>
+                                <span class="text-gold-600 font-serif text-xl font-bold">$500.00</span>
                             </li>
-                            <li class="flex justify-between items-center border-b border-gray-100 py-2">
-                                <span class="text-gray-700 tracking-wide font-light">Upper Eyeliner</span>
-                                <span class="text-gold-600 font-serif text-lg">$500.00</span>
+                            <li class="flex justify-between items-center border-b border-gray-100 py-4 hover:bg-gray-50 transition-colors px-2 rounded-lg">
+                                <span class="text-gray-800 text-lg tracking-wide font-medium">Upper Eyeliner</span>
+                                <span class="text-gold-600 font-serif text-xl font-bold">$500.00</span>
                             </li>
-                            <li class="flex justify-between items-center border-b border-gray-100 py-2">
-                                <span class="text-gray-700 tracking-wide font-light">Lower Eyeliner</span>
-                                <span class="text-gold-600 font-serif text-lg">$500.00</span>
+                            <li class="flex justify-between items-center border-b border-gray-100 py-4 hover:bg-gray-50 transition-colors px-2 rounded-lg">
+                                <span class="text-gray-800 text-lg tracking-wide font-medium">Lower Eyeliner</span>
+                                <span class="text-gold-600 font-serif text-xl font-bold">$500.00</span>
                             </li>
-                            <li class="flex justify-between items-center border-b border-gray-100 py-2">
-                                <span class="text-gray-700 tracking-wide font-medium">Upper and Lower Eyeliner</span>
-                                <span class="text-gold-600 font-serif text-lg">$800.00</span>
+                            <li class="flex justify-between items-center border-b border-gray-100 py-4 hover:bg-gray-50 transition-colors px-2 rounded-lg">
+                                <span class="text-gray-900 text-lg tracking-wide font-bold">Upper and Lower Eyeliner</span>
+                                <span class="text-gold-600 font-serif text-xl font-bold">$800.00</span>
                             </li>
-                            <li class="flex justify-between items-center border-b border-gray-100 py-2">
-                                <span class="text-gray-700 tracking-wide font-light">Lipliner</span>
-                                <span class="text-gold-600 font-serif text-lg">$500.00</span>
+                            <li class="flex justify-between items-center border-b border-gray-100 py-4 hover:bg-gray-50 transition-colors px-2 rounded-lg">
+                                <span class="text-gray-800 text-lg tracking-wide font-medium">Lipliner</span>
+                                <span class="text-gold-600 font-serif text-xl font-bold">$500.00</span>
                             </li>
-                            <li class="flex justify-between items-center border-b border-gray-100 py-2">
-                                <span class="text-gray-700 tracking-wide font-medium">Full Lip Color</span>
-                                <span class="text-gold-600 font-serif text-lg">$800.00</span>
+                            <li class="flex justify-between items-center py-4 hover:bg-gray-50 transition-colors px-2 rounded-lg">
+                                <span class="text-gray-900 text-lg tracking-wide font-bold">Full Lip Color</span>
+                                <span class="text-gold-600 font-serif text-xl font-bold">$800.00</span>
                             </li>
                         </ul>
 
                         <!-- Callout Information Box -->
-                        <div class="bg-spa-light p-6 border-l-4 border-gold-500 text-sm">
-                            <h5 class="font-serif text-spa-dark text-lg mb-2">Important Details</h5>
-                            <p class="text-gray-600 font-light mb-2 leading-relaxed">
-                                <span class="font-bold text-gray-700">Please Note:</span> Pigments and touch-up fees are not included in the listed procedure prices.
+                        <div class="bg-gray-50 p-8 border-l-4 border-gold-500 rounded-r-lg mt-auto">
+                            <h5 class="font-serif text-spa-dark text-xl mb-4 font-bold flex items-center">
+                                <i class="fas fa-info-circle text-gold-500 mr-3"></i> Important Details
+                            </h5>
+                            <p class="text-gray-700 text-base font-light mb-3 leading-relaxed">
+                                <span class="font-bold text-gray-900">Please Note:</span> Pigments and touch-up fees are not included in the listed procedure prices.
                             </p>
-                            <p class="text-gray-600 font-light mb-2 leading-relaxed">
-                                A <span class="font-bold">$100 consultation fee</span> is required (consultation time is approximately 45 minutes). This $100 will be fully deducted from the final procedure price.
+                            <p class="text-gray-700 text-base font-light mb-4 leading-relaxed">
+                                A <span class="font-bold text-gray-900">$100 consultation fee</span> is required (consultation time is approximately 45 minutes). This $100 will be fully deducted from the final procedure price.
                             </p>
-                            <p class="text-gray-600 font-light leading-relaxed mt-4 italic">
-                                <i class="fas fa-shield-alt text-gold-500 mr-1"></i> All equipment is meticulously sterilized and sanitized. Our premium ink is imported directly from one of the finest manufacturers in Germany.
-                            </p>
+                            <div class="border-t border-gray-200 pt-4 mt-4">
+                                <p class="text-gray-800 text-base leading-relaxed italic font-medium">
+                                    <i class="fas fa-shield-alt text-gold-500 mr-2"></i> All equipment is meticulously sterilized and sanitized. Our premium ink is imported directly from one of the finest manufacturers in Germany.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -346,91 +358,99 @@
 
         <!-- Featured Specialties (Keratin) -->
         <section id="specialties" class="py-0 flex flex-col lg:flex-row bg-white">
-            <div class="w-full lg:w-1/2 min-h-[400px] relative">
+            <div class="w-full lg:w-1/2 min-h-[500px] relative">
                 <img src="./assets/images/facial_room.png" alt="Facial Room" class="absolute inset-0 w-full h-full object-cover" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'100%\' height=\'100%\'><rect width=\'100%\' height=\'100%\' fill=\'%23f3f4f6\'/><text x=\'50%\' y=\'50%\' font-family=\'sans-serif\' font-size=\'20\' fill=\'%239ca3af\' text-anchor=\'middle\'>Treatment Room</text></svg>'">
             </div>
-            <div class="w-full lg:w-1/2 p-12 lg:p-24 flex flex-col justify-center bg-spa-dark text-white">
-                <h2 class="text-gold-400 font-sans tracking-widest uppercase text-sm mb-3">Signature Treatment</h2>
-                <h3 class="text-4xl font-serif mb-2">Keratin Complex</h3>
-                <p class="text-xl font-light italic text-gray-300 mb-8">"Get Straight, Get Smooth, Get Sexy!"</p>
+            <div class="w-full lg:w-1/2 p-16 lg:p-32 flex flex-col justify-center bg-spa-dark text-white">
+                <h2 class="text-gold-400 font-sans font-bold tracking-widest uppercase text-base mb-4">Signature Treatment</h2>
+                <h3 class="text-5xl font-serif mb-4 leading-tight">Keratin Complex</h3>
+                <p class="text-2xl font-light italic text-gold-100 mb-10">"Get Straight, Get Smooth, Get Sexy!"</p>
                 
-                <p class="text-gray-300 font-light leading-relaxed mb-8">
-                    Experience the transformative power of our Keratin Complex Smoothing Therapy. Designed to rejuvenate your hair from the inside out.
+                <p class="text-gray-200 text-lg font-light leading-loose mb-10">
+                    Experience the transformative power of our Keratin Complex Smoothing Therapy. Designed to rejuvenate your hair from the inside out, leaving it luxuriously soft and manageable.
                 </p>
                 
-                <ul class="space-y-4 mb-8">
+                <ul class="space-y-6 mb-12">
                     <li class="flex items-start">
-                        <i class="fas fa-check text-gold-400 mt-1 mr-4"></i>
-                        <span class="font-light">Eliminates up to 95% of frizz and curl</span>
+                        <div class="bg-gold-500/20 p-2 rounded-full mr-4 mt-1">
+                            <i class="fas fa-check text-gold-400 text-sm"></i>
+                        </div>
+                        <span class="font-light text-lg text-gray-100">Eliminates up to 95% of frizz and curl</span>
                     </li>
                     <li class="flex items-start">
-                        <i class="fas fa-check text-gold-400 mt-1 mr-4"></i>
-                        <span class="font-light">Smooths, softens, and completely rejuvenates hair</span>
+                        <div class="bg-gold-500/20 p-2 rounded-full mr-4 mt-1">
+                            <i class="fas fa-check text-gold-400 text-sm"></i>
+                        </div>
+                        <span class="font-light text-lg text-gray-100">Smooths, softens, and completely rejuvenates hair</span>
                     </li>
                     <li class="flex items-start">
-                        <i class="fas fa-check text-gold-400 mt-1 mr-4"></i>
-                        <span class="font-light">Safe and effective for all hair types</span>
+                        <div class="bg-gold-500/20 p-2 rounded-full mr-4 mt-1">
+                            <i class="fas fa-check text-gold-400 text-sm"></i>
+                        </div>
+                        <span class="font-light text-lg text-gray-100">Safe and effective for all hair types</span>
                     </li>
                     <li class="flex items-start">
-                        <i class="fas fa-check text-gold-400 mt-1 mr-4"></i>
-                        <span class="font-light">Dramatically reduces daily styling time</span>
+                        <div class="bg-gold-500/20 p-2 rounded-full mr-4 mt-1">
+                            <i class="fas fa-check text-gold-400 text-sm"></i>
+                        </div>
+                        <span class="font-light text-lg text-gray-100">Dramatically reduces daily styling time</span>
                     </li>
                 </ul>
-                <a href="#contact" class="inline-block px-8 py-3 border border-gold-400 text-gold-400 hover:bg-gold-400 hover:text-spa-dark transition-colors uppercase tracking-widest text-sm text-center w-max">Book Consultation</a>
+                <a href="#contact" class="inline-block px-10 py-4 border-2 border-gold-400 text-gold-400 hover:bg-gold-400 hover:text-spa-dark transition-colors uppercase tracking-widest text-base font-bold text-center w-max rounded-lg">Book Consultation</a>
             </div>
         </section>
 
         <!-- Products Section -->
-        <section id="products" class="py-24 bg-spa-light border-b border-gray-200">
+        <section id="products" class="py-32 bg-spa-light border-b border-gray-200">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
-                    <h2 class="text-gold-500 font-sans tracking-widest uppercase text-sm mb-2">Premium Retail</h2>
-                    <h3 class="text-4xl font-serif text-spa-dark">Professional Products</h3>
-                    <div class="w-24 h-1 bg-gold-500 mx-auto mt-6"></div>
+                <div class="text-center mb-20">
+                    <h2 class="text-gold-500 font-sans font-bold tracking-widest uppercase text-base mb-4">Premium Retail</h2>
+                    <h3 class="text-5xl font-serif text-spa-dark">Professional Products</h3>
+                    <div class="w-32 h-1 bg-gold-500 mx-auto mt-8"></div>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                    <div class="order-2 md:order-1">
-                        <h4 class="text-2xl font-serif text-spa-dark mb-4">Hair Care & Styling</h4>
-                        <p class="text-gray-600 font-light mb-6 leading-relaxed">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                    <div class="order-2 md:order-1 lg:pr-10">
+                        <h4 class="text-3xl font-serif text-spa-dark mb-6">Hair Care & Styling</h4>
+                        <p class="text-gray-700 text-lg font-light mb-8 leading-loose">
                             Maintain your salon-fresh look at home. We carry an extensive line of premium hair care products to suit every need and style.
                         </p>
-                        <div class="flex flex-wrap gap-2 mb-8">
-                            <span class="px-3 py-1 bg-white border border-gray-200 text-sm text-gray-700">Matrix</span>
-                            <span class="px-3 py-1 bg-white border border-gray-200 text-sm text-gray-700">Biosilk</span>
-                            <span class="px-3 py-1 bg-white border border-gray-200 text-sm text-gray-700">Biomega</span>
-                            <span class="px-3 py-1 bg-white border border-gray-200 text-sm text-gray-700">Joico</span>
-                            <span class="px-3 py-1 bg-white border border-gray-200 text-sm text-gray-700">Kenra</span>
-                            <span class="px-3 py-1 bg-white border border-gray-200 text-sm text-gray-700">Paul Mitchell</span>
-                            <span class="px-3 py-1 bg-white border border-gray-200 text-sm text-gray-700">Redken</span>
-                            <span class="px-3 py-1 bg-white border border-gray-200 text-sm text-gray-700">Bigsexy</span>
-                            <span class="px-3 py-1 bg-white border border-gray-200 text-sm text-gray-700">Bed Head</span>
-                            <span class="px-3 py-1 bg-white border border-gray-200 text-sm text-gray-700">Catwalk</span>
-                            <span class="px-3 py-1 bg-white border border-gray-200 text-sm text-gray-700">Rockaholic</span>
-                            <span class="px-3 py-1 bg-white border border-gray-200 text-sm text-gray-700">Tigi</span>
-                            <span class="px-3 py-1 bg-white border border-gray-200 text-sm text-gray-700">Tea Tree (Men)</span>
+                        <div class="flex flex-wrap gap-3 mb-12">
+                            <span class="px-4 py-2 bg-white border border-gray-200 text-base font-medium text-gray-800 rounded-lg shadow-sm">Matrix</span>
+                            <span class="px-4 py-2 bg-white border border-gray-200 text-base font-medium text-gray-800 rounded-lg shadow-sm">Biosilk</span>
+                            <span class="px-4 py-2 bg-white border border-gray-200 text-base font-medium text-gray-800 rounded-lg shadow-sm">Biomega</span>
+                            <span class="px-4 py-2 bg-white border border-gray-200 text-base font-medium text-gray-800 rounded-lg shadow-sm">Joico</span>
+                            <span class="px-4 py-2 bg-white border border-gray-200 text-base font-medium text-gray-800 rounded-lg shadow-sm">Kenra</span>
+                            <span class="px-4 py-2 bg-white border border-gray-200 text-base font-medium text-gray-800 rounded-lg shadow-sm">Paul Mitchell</span>
+                            <span class="px-4 py-2 bg-white border border-gray-200 text-base font-medium text-gray-800 rounded-lg shadow-sm">Redken</span>
+                            <span class="px-4 py-2 bg-white border border-gray-200 text-base font-medium text-gray-800 rounded-lg shadow-sm">Bigsexy</span>
+                            <span class="px-4 py-2 bg-white border border-gray-200 text-base font-medium text-gray-800 rounded-lg shadow-sm">Bed Head</span>
+                            <span class="px-4 py-2 bg-white border border-gray-200 text-base font-medium text-gray-800 rounded-lg shadow-sm">Catwalk</span>
+                            <span class="px-4 py-2 bg-white border border-gray-200 text-base font-medium text-gray-800 rounded-lg shadow-sm">Rockaholic</span>
+                            <span class="px-4 py-2 bg-white border border-gray-200 text-base font-medium text-gray-800 rounded-lg shadow-sm">Tigi</span>
+                            <span class="px-4 py-2 bg-white border border-gray-200 text-base font-medium text-gray-800 rounded-lg shadow-sm">Tea Tree (Men)</span>
                         </div>
                         
-                        <h4 class="text-2xl font-serif text-spa-dark mb-4 mt-10">Tools & Accessories</h4>
-                        <p class="text-gray-600 font-light mb-4 leading-relaxed">
-                            Various CHI Strainers, CHI Turbo Blow Dryers, Hot Shot tools, Aromas, Bath Salts, Bath Oils, and curated Gift Packages.
+                        <h4 class="text-3xl font-serif text-spa-dark mb-6 mt-12">Tools & Accessories</h4>
+                        <p class="text-gray-700 text-lg font-light mb-6 leading-loose">
+                            Upgrade your home routine with professional-grade tools and relaxing accessories. Featuring CHI Strainers, CHI Turbo Blow Dryers, Hot Shot tools, soothing Aromas, Bath Salts, Bath Oils, and beautifully curated Gift Packages.
                         </p>
                     </div>
                     
-                    <div class="order-1 md:order-2 grid grid-cols-2 gap-4">
-                        <img src="./assets/images/cosmetics_1.png" alt="Cosmetics Line 1" class="w-full h-64 object-cover rounded-sm shadow-md" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'100%\' height=\'100%\'><rect width=\'100%\' height=\'100%\' fill=\'%23e5e7eb\'/><text x=\'50%\' y=\'50%\' font-family=\'sans-serif\' font-size=\'16\' fill=\'%239ca3af\' text-anchor=\'middle\'>Product Display</text></svg>'">
-                        <img src="./assets/images/cosmetics_2.png" alt="Cosmetics Line 2" class="w-full h-64 object-cover rounded-sm shadow-md mt-8" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'100%\' height=\'100%\'><rect width=\'100%\' height=\'100%\' fill=\'%23e5e7eb\'/><text x=\'50%\' y=\'50%\' font-family=\'sans-serif\' font-size=\'16\' fill=\'%239ca3af\' text-anchor=\'middle\'>Skin Care</text></svg>'">
+                    <div class="order-1 md:order-2 grid grid-cols-2 gap-6">
+                        <img src="./assets/images/cosmetics_1.png" alt="Cosmetics Line 1" class="w-full h-80 object-cover rounded-lg shadow-lg" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'100%\' height=\'100%\'><rect width=\'100%\' height=\'100%\' fill=\'%23e5e7eb\'/><text x=\'50%\' y=\'50%\' font-family=\'sans-serif\' font-size=\'16\' fill=\'%239ca3af\' text-anchor=\'middle\'>Product Display</text></svg>'">
+                        <img src="./assets/images/cosmetics_2.png" alt="Cosmetics Line 2" class="w-full h-80 object-cover rounded-lg shadow-lg mt-12" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'100%\' height=\'100%\'><rect width=\'100%\' height=\'100%\' fill=\'%23e5e7eb\'/><text x=\'50%\' y=\'50%\' font-family=\'sans-serif\' font-size=\'16\' fill=\'%239ca3af\' text-anchor=\'middle\'>Skin Care</text></svg>'">
                     </div>
                 </div>
 
                 <!-- Skincare Highlight -->
-                <div class="mt-20 bg-white p-8 md:p-12 border border-gray-100 text-center relative overflow-hidden shadow-sm">
+                <div class="mt-24 bg-white p-12 md:p-16 border border-gray-200 text-center relative overflow-hidden shadow-md rounded-lg">
                     <div class="relative z-10">
-                        <h4 class="text-xl md:text-2xl font-serif text-spa-dark mb-4">Rodan + Fields & Amway Skin Care</h4>
-                        <p class="text-gray-600 font-light max-w-3xl mx-auto leading-relaxed mb-6">
+                        <h4 class="text-2xl md:text-3xl font-serif text-spa-dark mb-6">Rodan + Fields & Amway Skin Care</h4>
+                        <p class="text-gray-700 text-xl font-light max-w-4xl mx-auto leading-loose mb-8">
                             No matter your age, gender, skin tone, or ethnicity, Rodan + Fields helps you achieve healthier, younger-looking skin. We are also proud to be your local Amway consultant!
                         </p>
-                        <span class="inline-block text-gold-500 italic font-serif">A variety of skin care products available in-store.</span>
+                        <span class="inline-block text-gold-600 text-lg italic font-serif font-medium bg-gold-50 px-6 py-2 rounded-full">A variety of skin care products available in-store.</span>
                     </div>
                 </div>
             </div>
@@ -438,17 +458,19 @@
 
         <!-- Location & Contact -->
         <section id="contact" class="py-0 flex flex-col lg:flex-row bg-white">
-            <div class="w-full lg:w-1/2 p-12 lg:p-24 flex flex-col justify-center bg-gray-50">
-                <h2 class="text-gold-500 font-sans tracking-widest uppercase text-sm mb-3">Visit Us</h2>
-                <h3 class="text-4xl font-serif text-spa-dark mb-8">We Look Forward To Seeing You</h3>
+            <div class="w-full lg:w-1/2 p-12 lg:p-24 flex flex-col justify-center bg-gray-50 border-r border-gray-100">
+                <h2 class="text-gold-500 font-sans font-bold tracking-widest uppercase text-base mb-4">Visit Us</h2>
+                <h3 class="text-5xl font-serif text-spa-dark mb-12">We Look Forward To Seeing You</h3>
                 
-                <div class="space-y-6">
+                <div class="space-y-10">
                     <div class="flex items-start">
-                        <div class="w-12 text-gold-500 text-xl"><i class="fas fa-map-marker-alt"></i></div>
-                        <div>
-                            <h5 class="font-bold text-spa-dark mb-1">Address</h5>
-                            <p class="text-gray-600 font-light">
-                                <a href="https://maps.app.goo.gl/hknR9iBsonT4Nhyz5" target="_blank" rel="noopener noreferrer" class="hover:text-gold-500 transition-colors">
+                        <div class="w-16 bg-white p-3 rounded-full shadow-sm text-center mr-6">
+                            <i class="fas fa-map-marker-alt text-gold-500 text-2xl"></i>
+                        </div>
+                        <div class="pt-1">
+                            <h5 class="text-xl font-bold text-spa-dark mb-2">Address</h5>
+                            <p class="text-gray-700 text-lg font-light leading-relaxed">
+                                <a href="https://maps.app.goo.gl/hknR9iBsonT4Nhyz5" target="_blank" rel="noopener noreferrer" class="hover:text-gold-600 transition-colors">
                                     107 N. Main St<br>Nashville, AR 71852
                                 </a>
                             </p>
@@ -456,81 +478,84 @@
                     </div>
                     
                     <div class="flex items-start">
-                        <div class="w-12 text-gold-500 text-xl"><i class="fas fa-phone-alt"></i></div>
-                        <div>
-                            <h5 class="font-bold text-spa-dark mb-1">Phone</h5>
-                            <p class="text-gray-600 font-light">
-                                <a href="tel:+18708451999" class="hover:text-gold-500 transition-colors">(870) 845-1999</a><br>
-                                <a href="tel:+18702000630" class="hover:text-gold-500 transition-colors">(870) 200-0630</a>
+                        <div class="w-16 bg-white p-3 rounded-full shadow-sm text-center mr-6">
+                            <i class="fas fa-phone-alt text-gold-500 text-2xl"></i>
+                        </div>
+                        <div class="pt-1">
+                            <h5 class="text-xl font-bold text-spa-dark mb-2">Phone</h5>
+                            <p class="text-gray-700 text-lg font-light leading-relaxed">
+                                <a href="tel:+18708451999" class="hover:text-gold-600 transition-colors block mb-1">(870) 845-1999</a>
+                                <a href="tel:+18702000630" class="hover:text-gold-600 transition-colors block">(870) 200-0630</a>
                             </p>
                         </div>
                     </div>
 
                     <div class="flex items-start">
-                        <div class="w-12 text-gold-500 text-xl"><i class="fas fa-globe"></i></div>
-                        <div>
-                            <h5 class="font-bold text-spa-dark mb-1">Website</h5>
-                            <p class="text-gray-600 font-light">
-                                <a href="http://www.asianimagedayspa.com" target="_blank" rel="noopener noreferrer" class="hover:text-gold-500 transition-colors">www.asianimagedayspa.com</a>
+                        <div class="w-16 bg-white p-3 rounded-full shadow-sm text-center mr-6">
+                            <i class="fas fa-globe text-gold-500 text-2xl"></i>
+                        </div>
+                        <div class="pt-1">
+                            <h5 class="text-xl font-bold text-spa-dark mb-2">Website</h5>
+                            <p class="text-gray-700 text-lg font-light">
+                                <a href="http://www.asianimagedayspa.com" target="_blank" rel="noopener noreferrer" class="hover:text-gold-600 transition-colors">www.asianimagedayspa.com</a>
                             </p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Google Maps Embed -->
-                <div class="mt-10 w-full overflow-hidden rounded-sm shadow-md border border-gray-200">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.8961687042065!2d-93.85226771210627!3d33.94379855435445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86349b131003ad25%3A0xde07c2ffdc12b66b!2sAsian%20Image%20salon%20and%20DaySpa!5e0!3m2!1sen!2sus!4v1772134074375!5m2!1sen!2sus" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="mt-16 w-full overflow-hidden rounded-lg shadow-lg border border-gray-200">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.8961687042065!2d-93.85226771210627!3d33.94379855435445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86349b131003ad25%3A0xde07c2ffdc12b66b!2sAsian%20Image%20salon%20and%20DaySpa!5e0!3m2!1sen!2sus!4v1772134074375!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
-            <div class="w-full lg:w-1/2 min-h-[400px] relative">
-                <!-- Swapped this image source to salon_banner.png -->
+            <div class="w-full lg:w-1/2 min-h-[500px] relative">
                 <img src="./assets/images/salon_banner.png" alt="Salon Interior Banner" class="absolute inset-0 w-full h-full object-cover" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'100%\' height=\'100%\'><rect width=\'100%\' height=\'100%\' fill=\'%23d1d5db\'/><text x=\'50%\' y=\'50%\' font-family=\'sans-serif\' font-size=\'20\' fill=\'%236b7280\' text-anchor=\'middle\'>Salon Banner Image</text></svg>'">
             </div>
         </section>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-spa-dark text-white pt-16 pb-8 border-t-4 border-gold-500">
+    <footer class="bg-spa-dark text-white pt-20 pb-10 border-t-8 border-gold-500">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-16 mb-16">
                 <div>
-                    <img src="./assets/images/logo.png" alt="Logo" class="h-12 w-auto mb-6 bg-white p-2 rounded-sm hidden" onload="this.classList.remove('hidden')" onerror="this.style.display='none'">
-                    <h3 class="text-2xl font-serif mb-4">Asian Image</h3>
-                    <p class="text-gray-400 font-light text-sm leading-relaxed max-w-xs">
-                        Your premier destination for luxury salon and day spa services in Nashville, Arkansas.
+                    <img src="./assets/images/logo.png" alt="Logo" class="h-16 w-auto mb-8 bg-white p-2 rounded-lg hidden" onload="this.classList.remove('hidden')" onerror="this.style.display='none'">
+                    <h3 class="text-3xl font-serif mb-6 text-gold-100">Asian Image</h3>
+                    <p class="text-gray-400 font-light text-base leading-loose max-w-sm">
+                        Your premier destination for luxury salon and day spa services in Nashville, Arkansas. Dedicated to providing an unparalleled experience in beauty and relaxation.
                     </p>
                 </div>
                 <div>
-                    <h4 class="text-lg font-bold mb-6 uppercase tracking-widest text-gold-400">Quick Links</h4>
-                    <ul class="space-y-3 font-light text-gray-400 text-sm">
-                        <li><a href="#about" class="hover:text-white transition-colors">About Us</a></li>
-                        <li><a href="#services" class="hover:text-white transition-colors">Menu of Services</a></li>
-                        <li><a href="#pricing" class="hover:text-white transition-colors">Pricing</a></li>
-                        <li><a href="#specialties" class="hover:text-white transition-colors">Keratin Complex</a></li>
-                        <li><a href="#products" class="hover:text-white transition-colors">Professional Products</a></li>
+                    <h4 class="text-xl font-bold mb-8 uppercase tracking-widest text-gold-400">Quick Links</h4>
+                    <ul class="space-y-4 font-light text-gray-300 text-lg">
+                        <li><a href="#about" class="hover:text-gold-400 transition-colors">About Us</a></li>
+                        <li><a href="#services" class="hover:text-gold-400 transition-colors">Menu of Services</a></li>
+                        <li><a href="#pricing" class="hover:text-gold-400 transition-colors">Pricing & Rates</a></li>
+                        <li><a href="#specialties" class="hover:text-gold-400 transition-colors">Keratin Complex</a></li>
+                        <li><a href="#products" class="hover:text-gold-400 transition-colors">Professional Products</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="text-lg font-bold mb-6 uppercase tracking-widest text-gold-400">Hours</h4>
-                    <ul class="space-y-3 font-light text-gray-400 text-sm">
-                        <li class="flex justify-between border-b border-gray-700 pb-2">
+                    <h4 class="text-xl font-bold mb-8 uppercase tracking-widest text-gold-400">Hours of Operation</h4>
+                    <ul class="space-y-4 font-light text-gray-300 text-lg">
+                        <li class="flex justify-between border-b border-gray-700 pb-3">
                             <span>Sunday - Tuesday</span>
-                            <span>Closed</span>
+                            <span class="text-gray-500">Closed</span>
                         </li>
-                        <li class="flex justify-between border-b border-gray-700 pb-2">
+                        <li class="flex justify-between border-b border-gray-700 pb-3">
                             <span>Wed - Sat (Salon)</span>
-                            <span>Call for appt.</span>
+                            <span class="font-medium">Call for appt.</span>
                         </li>
-                        <li class="flex justify-between pb-2 text-gold-400">
+                        <li class="flex justify-between pb-3 text-gold-400 font-medium">
                             <span>Green Banana</span>
                             <span>11:00 AM - Close</span>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="text-center pt-8 border-t border-gray-800 text-sm text-gray-500 font-light flex flex-col md:flex-row justify-between items-center">
+            <div class="text-center pt-8 border-t border-gray-800 text-base text-gray-500 font-light flex flex-col md:flex-row justify-between items-center">
                 <p>&copy; <script>document.write(new Date().getFullYear())</script> Asian Image Salon and Day Spa. All rights reserved.</p>
-                <p class="mt-2 md:mt-0">107 N. Main St, Nashville AR 71852</p>
+                <p class="mt-4 md:mt-0">107 N. Main St, Nashville AR 71852</p>
             </div>
         </div>
     </footer>
