@@ -41,7 +41,7 @@
                         serif: ['Playfair Display', 'serif'],
                     },
                     backgroundImage: {
-                        'hero-pattern': "linear-gradient(rgba(44, 44, 44, 0.6), rgba(44, 44, 44, 0.7)), url('./assets/images/salon_banner.png')",
+                        'hero-pattern': "linear-gradient(rgba(44, 44, 44, 0.6), rgba(44, 44, 44, 0.7)), url('./assets/images/outside.png')",
                         'tea-pattern': "linear-gradient(rgba(74, 93, 78, 0.85), rgba(74, 93, 78, 0.9)), url('./assets/images/main_room.png')",
                     }
                 }
@@ -88,9 +88,10 @@
                 </div>
                 
                 <!-- Desktop Menu -->
-                <nav class="hidden md:flex space-x-8 items-center">
+                <nav class="hidden md:flex space-x-6 lg:space-x-8 items-center">
                     <a href="#about" class="text-sm uppercase tracking-widest text-gray-600 hover:text-gold-500 transition-colors">About</a>
                     <a href="#services" class="text-sm uppercase tracking-widest text-gray-600 hover:text-gold-500 transition-colors">Services</a>
+                    <a href="#pricing" class="text-sm uppercase tracking-widest text-gray-600 hover:text-gold-500 transition-colors">Pricing</a>
                     <a href="#specialties" class="text-sm uppercase tracking-widest text-gray-600 hover:text-gold-500 transition-colors">Specialties</a>
                     <a href="#products" class="text-sm uppercase tracking-widest text-gray-600 hover:text-gold-500 transition-colors">Products</a>
                     <a href="#contact" class="px-6 py-2 bg-gold-500 text-white text-sm uppercase tracking-widest hover:bg-gold-600 transition-colors rounded-sm">Book Now</a>
@@ -110,6 +111,7 @@
             <div class="px-4 pt-2 pb-6 space-y-1 text-center">
                 <a href="#about" class="block px-3 py-3 text-base uppercase tracking-widest text-gray-600 hover:bg-gray-50 hover:text-gold-500">About</a>
                 <a href="#services" class="block px-3 py-3 text-base uppercase tracking-widest text-gray-600 hover:bg-gray-50 hover:text-gold-500">Services</a>
+                <a href="#pricing" class="block px-3 py-3 text-base uppercase tracking-widest text-gray-600 hover:bg-gray-50 hover:text-gold-500">Pricing</a>
                 <a href="#specialties" class="block px-3 py-3 text-base uppercase tracking-widest text-gray-600 hover:bg-gray-50 hover:text-gold-500">Specialties</a>
                 <a href="#products" class="block px-3 py-3 text-base uppercase tracking-widest text-gray-600 hover:bg-gray-50 hover:text-gold-500">Products</a>
                 <a href="#contact" class="block px-3 py-3 mt-4 text-base uppercase tracking-widest bg-gold-500 text-white hover:bg-gold-600 mx-4 rounded-sm">Book Appointment</a>
@@ -176,10 +178,10 @@
         </section>
 
         <!-- Services Menu -->
-        <section id="services" class="py-24 bg-spa-light">
+        <section id="services" class="pt-24 pb-12 bg-spa-light">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16">
-                    <h2 class="text-gold-500 font-sans tracking-widest uppercase text-sm mb-2">Menu of Services</h2>
+                    <h2 class="text-gold-500 font-sans tracking-widest uppercase text-sm mb-2">Our Capabilities</h2>
                     <h3 class="text-4xl font-serif text-spa-dark">Comprehensive Care</h3>
                     <div class="w-24 h-1 bg-gold-500 mx-auto mt-6"></div>
                 </div>
@@ -227,6 +229,116 @@
                         <p class="text-sm text-gray-500 leading-relaxed italic border-l-2 border-gray-200 pl-3">
                             Featuring Dermatek technology. Vacuum and suction out deeply embedded dirt, grease, and impurities. Clinically improves skin elasticity and reduces micro-wrinkles.
                         </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detailed Pricing Menu Section -->
+        <section id="pricing" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-gold-500 font-sans tracking-widest uppercase text-sm mb-2">Spa Menu</h2>
+                    <h3 class="text-4xl font-serif text-spa-dark">Rates & Services</h3>
+                    <div class="w-24 h-1 bg-gold-500 mx-auto mt-6"></div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                    
+                    <!-- Column 1: Facials & Massage -->
+                    <div>
+                        <div class="flex items-center mb-8 border-b border-gray-200 pb-4">
+                            <i class="fas fa-spa text-2xl text-gold-500 mr-4"></i>
+                            <h4 class="text-2xl font-serif text-spa-dark">Facials & Massage Therapies</h4>
+                        </div>
+                        
+                        <ul class="space-y-4">
+                            <li class="flex justify-between items-center border-b border-gray-100 py-2">
+                                <span class="text-gray-700 tracking-wide font-light">Dermatek Facial</span>
+                                <span class="text-gold-600 font-serif text-lg">$75.00</span>
+                            </li>
+                            <li class="flex justify-between items-center border-b border-gray-100 py-2">
+                                <span class="text-gray-700 tracking-wide font-light">Power Paraffin Facial</span>
+                                <span class="text-gold-600 font-serif text-lg">$75.00</span>
+                            </li>
+                            <li class="flex justify-between items-center border-b border-gray-100 py-2">
+                                <span class="text-gray-700 tracking-wide font-light">Acne Facial</span>
+                                <span class="text-gold-600 font-serif text-lg">$85.00</span>
+                            </li>
+                            <li class="flex justify-between items-center border-b border-gray-100 py-2">
+                                <span class="text-gray-700 tracking-wide font-light">Non-Surgical Facial</span>
+                                <span class="text-gold-600 font-serif italic text-sm">Consultation Required</span>
+                            </li>
+                            <li class="flex justify-between items-center border-b border-gray-100 py-2">
+                                <span class="text-gray-700 tracking-wide font-light">Pressure Point Massage</span>
+                                <span class="text-gold-600 font-serif text-lg">$95.00</span>
+                            </li>
+                            <li class="flex justify-between items-center border-b border-gray-100 py-2">
+                                <span class="text-gray-700 tracking-wide font-light">Shoulder and Low Back Massage</span>
+                                <span class="text-gold-600 font-serif text-lg">$45.00</span>
+                            </li>
+                            <li class="flex justify-between items-center border-b border-gray-100 py-2">
+                                <span class="text-gray-700 tracking-wide font-light">Half Hour Massage</span>
+                                <span class="text-gold-600 font-serif text-lg">$45.00</span>
+                            </li>
+                            <li class="flex justify-between items-center border-b border-gray-100 py-2">
+                                <span class="text-gray-700 tracking-wide font-light">Herbal Body Polish</span>
+                                <span class="text-gold-600 font-serif text-lg">$95.00</span>
+                            </li>
+                            <li class="flex justify-between items-center border-b border-gray-100 py-2">
+                                <span class="text-gray-700 tracking-wide font-light">Ear Candling</span>
+                                <span class="text-gold-600 font-serif text-lg">$60.00</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 2: Cosmetic Tattooing -->
+                    <div>
+                        <div class="flex items-center mb-8 border-b border-gray-200 pb-4">
+                            <i class="fas fa-eye text-2xl text-gold-500 mr-4"></i>
+                            <h4 class="text-2xl font-serif text-spa-dark">Permanent Cosmetic Tattooing</h4>
+                        </div>
+                        
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex justify-between items-center border-b border-gray-100 py-2">
+                                <span class="text-gray-700 tracking-wide font-light">Eyebrows</span>
+                                <span class="text-gold-600 font-serif text-lg">$500.00</span>
+                            </li>
+                            <li class="flex justify-between items-center border-b border-gray-100 py-2">
+                                <span class="text-gray-700 tracking-wide font-light">Upper Eyeliner</span>
+                                <span class="text-gold-600 font-serif text-lg">$500.00</span>
+                            </li>
+                            <li class="flex justify-between items-center border-b border-gray-100 py-2">
+                                <span class="text-gray-700 tracking-wide font-light">Lower Eyeliner</span>
+                                <span class="text-gold-600 font-serif text-lg">$500.00</span>
+                            </li>
+                            <li class="flex justify-between items-center border-b border-gray-100 py-2">
+                                <span class="text-gray-700 tracking-wide font-medium">Upper and Lower Eyeliner</span>
+                                <span class="text-gold-600 font-serif text-lg">$800.00</span>
+                            </li>
+                            <li class="flex justify-between items-center border-b border-gray-100 py-2">
+                                <span class="text-gray-700 tracking-wide font-light">Lipliner</span>
+                                <span class="text-gold-600 font-serif text-lg">$500.00</span>
+                            </li>
+                            <li class="flex justify-between items-center border-b border-gray-100 py-2">
+                                <span class="text-gray-700 tracking-wide font-medium">Full Lip Color</span>
+                                <span class="text-gold-600 font-serif text-lg">$800.00</span>
+                            </li>
+                        </ul>
+
+                        <!-- Callout Information Box -->
+                        <div class="bg-spa-light p-6 border-l-4 border-gold-500 text-sm">
+                            <h5 class="font-serif text-spa-dark text-lg mb-2">Important Details</h5>
+                            <p class="text-gray-600 font-light mb-2 leading-relaxed">
+                                <span class="font-bold text-gray-700">Please Note:</span> Pigments and touch-up fees are not included in the listed procedure prices.
+                            </p>
+                            <p class="text-gray-600 font-light mb-2 leading-relaxed">
+                                A <span class="font-bold">$100 consultation fee</span> is required (consultation time is approximately 45 minutes). This $100 will be fully deducted from the final procedure price.
+                            </p>
+                            <p class="text-gray-600 font-light leading-relaxed mt-4 italic">
+                                <i class="fas fa-shield-alt text-gold-500 mr-1"></i> All equipment is meticulously sterilized and sanitized. Our premium ink is imported directly from one of the finest manufacturers in Germany.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -371,7 +483,8 @@
                 </div>
             </div>
             <div class="w-full lg:w-1/2 min-h-[400px] relative">
-                <img src="./assets/images/outside.png" alt="Salon Exterior" class="absolute inset-0 w-full h-full object-cover" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'100%\' height=\'100%\'><rect width=\'100%\' height=\'100%\' fill=\'%23d1d5db\'/><text x=\'50%\' y=\'50%\' font-family=\'sans-serif\' font-size=\'20\' fill=\'%236b7280\' text-anchor=\'middle\'>Storefront Image</text></svg>'">
+                <!-- Swapped this image source to salon_banner.png -->
+                <img src="./assets/images/salon_banner.png" alt="Salon Interior Banner" class="absolute inset-0 w-full h-full object-cover" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'100%\' height=\'100%\'><rect width=\'100%\' height=\'100%\' fill=\'%23d1d5db\'/><text x=\'50%\' y=\'50%\' font-family=\'sans-serif\' font-size=\'20\' fill=\'%236b7280\' text-anchor=\'middle\'>Salon Banner Image</text></svg>'">
             </div>
         </section>
     </main>
@@ -392,6 +505,7 @@
                     <ul class="space-y-3 font-light text-gray-400 text-sm">
                         <li><a href="#about" class="hover:text-white transition-colors">About Us</a></li>
                         <li><a href="#services" class="hover:text-white transition-colors">Menu of Services</a></li>
+                        <li><a href="#pricing" class="hover:text-white transition-colors">Pricing</a></li>
                         <li><a href="#specialties" class="hover:text-white transition-colors">Keratin Complex</a></li>
                         <li><a href="#products" class="hover:text-white transition-colors">Professional Products</a></li>
                     </ul>
