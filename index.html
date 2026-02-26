@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asian Image Salon and Day Spa | Nashville, AR</title>
+    <meta name="description" content="Experience luxury at Asian Image Salon and Day Spa in Nashville, AR. Offering hair, nails, facials, massages, and the exclusive Green Banana Bubble Tea.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            400: '#D4AF37',
+                            500: '#C5A028',
+                            600: '#AA8A22',
+                        },
+                        spa: {
+                            light: '#F9F8F6',
+                            dark: '#2C2C2C',
+                            accent: '#4A5D4E' // Subtle natural green for the bubble tea / spa vibe
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Lato', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    backgroundImage: {
+                        'hero-pattern': "linear-gradient(rgba(44, 44, 44, 0.6), rgba(44, 44, 44, 0.7)), url('./assets/images/salon_banner.png')",
+                        'tea-pattern': "linear-gradient(rgba(74, 93, 78, 0.85), rgba(74, 93, 78, 0.9)), url('./assets/images/main_room.png')",
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom Utilities and Animations */
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+        .service-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .text-shadow-sm {
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+        /* Fallback background colors for missing images */
+        .img-fallback {
+            background-color: #e5e7eb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #9ca3af;
+        }
+    </style>
+</head>
+<body class="font-sans text-spa-dark bg-spa-light antialiased selection:bg-gold-400 selection:text-white">
+
+    <!-- Navigation -->
+    <header class="fixed w-full z-50 glass-nav transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-24">
+                <!-- Logo area -->
+                <div class="flex-shrink-0 flex items-center cursor-pointer" onclick="window.scrollTo(0,0)">
+                    <img class="h-16 w-auto object-contain" src="./assets/images/logo.png" alt="Asian Image Salon and Day Spa Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <span class="font-serif text-2xl font-bold tracking-wider text-spa-dark hidden ml-2">Asian Image</span>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="#about" class="text-sm uppercase tracking-widest text-gray-600 hover:text-gold-500 transition-colors">About</a>
+                    <a href="#services" class="text-sm uppercase tracking-widest text-gray-600 hover:text-gold-500 transition-colors">Services</a>
+                    <a href="#specialties" class="text-sm uppercase tracking-widest text-gray-600 hover:text-gold-500 transition-colors">Specialties</a>
+                    <a href="#products" class="text-sm uppercase tracking-widest text-gray-600 hover:text-gold-500 transition-colors">Products</a>
+                    <a href="#contact" class="px-6 py-2 bg-gold-500 text-white text-sm uppercase tracking-widest hover:bg-gold-600 transition-colors rounded-sm">Book Now</a>
+                </nav>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-gold-500 focus:outline-none p-2">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Panel -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-lg">
+            <div class="px-4 pt-2 pb-6 space-y-1 text-center">
+                <a href="#about" class="block px-3 py-3 text-base uppercase tracking-widest text-gray-600 hover:bg-gray-50 hover:text-gold-500">About</a>
+                <a href="#services" class="block px-3 py-3 text-base uppercase tracking-widest text-gray-600 hover:bg-gray-50 hover:text-gold-500">Services</a>
+                <a href="#specialties" class="block px-3 py-3 text-base uppercase tracking-widest text-gray-600 hover:bg-gray-50 hover:text-gold-500">Specialties</a>
+                <a href="#products" class="block px-3 py-3 text-base uppercase tracking-widest text-gray-600 hover:bg-gray-50 hover:text-gold-500">Products</a>
+                <a href="#contact" class="block px-3 py-3 mt-4 text-base uppercase tracking-widest bg-gold-500 text-white hover:bg-gold-600 mx-4 rounded-sm">Book Appointment</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative h-screen min-h-[600px] flex items-center justify-center bg-hero-pattern bg-cover bg-center bg-no-repeat bg-gray-900">
+            <div class="absolute inset-0 bg-black/40"></div>
+            <div class="relative z-10 text-center px-4 max-w-4xl mx-auto mt-16">
+                <p class="text-gold-400 font-sans tracking-[0.2em] uppercase text-sm mb-4">Welcome to Excellence</p>
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-serif text-white mb-6 leading-tight text-shadow-sm">Asian Image<br><span class="text-3xl md:text-5xl italic font-light">Salon & Day Spa</span></h1>
+                <p class="text-gray-200 text-lg md:text-xl font-light mb-10 max-w-2xl mx-auto">Discover a sanctuary of beauty and relaxation in the heart of Nashville, Arkansas.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#services" class="px-8 py-4 bg-transparent border border-white text-white hover:bg-white hover:text-spa-dark transition-all duration-300 uppercase tracking-widest text-sm">Explore Services</a>
+                    <a href="tel:+18708451999" class="px-8 py-4 bg-gold-500 text-white hover:bg-gold-600 border border-gold-500 transition-all duration-300 uppercase tracking-widest text-sm">Call to Book</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Welcome / About Section -->
+        <section id="about" class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div class="relative">
+                        <img src="./assets/images/waiting_room.png" alt="Spa Waiting Room" class="w-full h-[500px] object-cover rounded-sm shadow-xl z-10 relative" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'100%\' height=\'100%\'><rect width=\'100%\' height=\'100%\' fill=\'%23f3f4f6\'/><text x=\'50%\' y=\'50%\' font-family=\'sans-serif\' font-size=\'20\' fill=\'%239ca3af\' text-anchor=\'middle\'>Waiting Room Image</text></svg>'">
+                        <div class="absolute -bottom-8 -right-8 w-64 h-64 bg-spa-light z-0 hidden lg:block border border-gray-100"></div>
+                        <img src="./assets/images/fountain.png" alt="Spa Fountain" class="absolute -bottom-12 -right-12 w-48 h-48 object-cover rounded-sm shadow-lg z-20 border-4 border-white hidden lg:block" onerror="this.style.display='none'">
+                    </div>
+                    <div>
+                        <h2 class="text-gold-500 font-sans tracking-widest uppercase text-sm mb-2">Our Sanctuary</h2>
+                        <h3 class="text-4xl font-serif text-spa-dark mb-6">A Premier Destination for Beauty & Wellness</h3>
+                        <p class="text-gray-600 leading-relaxed mb-6 font-light">
+                            At Asian Image Salon and Day Spa, we believe in providing an unparalleled experience. From top-tier hair styling and flawless nail enhancements to rejuvenating skin care and massage therapy, our expert team is dedicated to your complete satisfaction.
+                        </p>
+                        <p class="text-gray-600 leading-relaxed mb-8 font-light">
+                            We offer exclusive all-day packages perfect for birthdays, anniversaries, and special occasions. Treat yourself or a loved one to a day of absolute luxury.
+                        </p>
+                        <div class="flex items-center space-x-4 border-l-2 border-gold-500 pl-4">
+                            <i class="fas fa-gift text-gold-500 text-2xl"></i>
+                            <p class="text-spa-dark font-serif italic text-lg">Gift Certificates Available for All Occasions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Green Banana Experience -->
+        <section class="py-20 bg-tea-pattern bg-cover bg-center bg-fixed relative text-white text-center">
+            <div class="relative z-10 max-w-4xl mx-auto px-4">
+                <i class="fas fa-leaf text-gold-400 text-4xl mb-6"></i>
+                <h2 class="text-4xl md:text-5xl font-serif mb-4">The Green Banana</h2>
+                <h3 class="text-xl md:text-2xl font-light italic mb-8">"Our Bubble Tea is not just a drink, it's an experience!"</h3>
+                <p class="text-lg text-gray-200 mb-8 max-w-2xl mx-auto font-light leading-relaxed">
+                    Elevate your salon visit. We serve delicious, authentic Bubble Tea and a curated selection of Asian Snacks. Available Wednesday through Saturday, from 11:00 AM to closing.
+                </p>
+                <div class="inline-block border border-gold-400 p-4 bg-black/20 backdrop-blur-sm">
+                    <p class="font-sans tracking-widest uppercase text-sm text-gold-400">Hours of Operation</p>
+                    <p class="text-lg mt-1">Wed - Sat: 11:00 AM - Close</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Menu -->
+        <section id="services" class="py-24 bg-spa-light">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-gold-500 font-sans tracking-widest uppercase text-sm mb-2">Menu of Services</h2>
+                    <h3 class="text-4xl font-serif text-spa-dark">Comprehensive Care</h3>
+                    <div class="w-24 h-1 bg-gold-500 mx-auto mt-6"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Nail Care -->
+                    <div class="bg-white p-10 service-card border border-gray-100 relative overflow-hidden group">
+                        <div class="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
+                            <i class="fas fa-hand-sparkles text-6xl text-gold-500"></i>
+                        </div>
+                        <h4 class="text-2xl font-serif text-spa-dark mb-4 border-b border-gray-100 pb-4">Nail Care</h4>
+                        <ul class="space-y-3 text-gray-600 font-light">
+                            <li class="flex justify-between items-center"><span>Spa Manicure</span> <span class="text-gold-500 text-xs"><i class="fas fa-circle"></i></span></li>
+                            <li class="flex justify-between items-center"><span>Spa Pedicure with Paraffin</span> <span class="text-gold-500 text-xs"><i class="fas fa-circle"></i></span></li>
+                            <li class="flex justify-between items-center"><span>Nail Enhancements</span> <span class="text-gold-500 text-xs"><i class="fas fa-circle"></i></span></li>
+                            <li class="flex justify-between items-center"><span>Natural Nails Overlay</span> <span class="text-gold-500 text-xs"><i class="fas fa-circle"></i></span></li>
+                            <li class="flex justify-between items-center"><span>Solar Nails & Color Tips</span> <span class="text-gold-500 text-xs"><i class="fas fa-circle"></i></span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Wellness & Body -->
+                    <div class="bg-white p-10 service-card border border-gray-100 relative overflow-hidden group">
+                        <div class="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
+                            <i class="fas fa-spa text-6xl text-gold-500"></i>
+                        </div>
+                        <h4 class="text-2xl font-serif text-spa-dark mb-4 border-b border-gray-100 pb-4">Wellness & Body</h4>
+                        <ul class="space-y-3 text-gray-600 font-light">
+                            <li class="flex justify-between items-center"><span>Professional Massage</span> <span class="text-gold-500 text-xs"><i class="fas fa-circle"></i></span></li>
+                            <li class="flex justify-between items-center"><span>Ear Candling</span> <span class="text-gold-500 text-xs"><i class="fas fa-circle"></i></span></li>
+                            <li class="flex justify-between items-center"><span>Permanent Cosmetic Tattoo</span> <span class="text-gold-500 text-xs"><i class="fas fa-circle"></i></span></li>
+                            <li class="flex justify-between items-center"><span>All-Day Packages</span> <span class="text-gold-500 text-xs"><i class="fas fa-circle"></i></span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Facial Treatments -->
+                    <div class="bg-white p-10 service-card border border-gray-100 relative overflow-hidden group">
+                        <div class="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
+                            <i class="fas fa-smile-beam text-6xl text-gold-500"></i>
+                        </div>
+                        <h4 class="text-2xl font-serif text-spa-dark mb-4 border-b border-gray-100 pb-4">Facial Treatments</h4>
+                        <ul class="space-y-3 text-gray-600 font-light mb-4">
+                            <li class="flex justify-between items-center"><span>Non-Surgical Face Lift</span> <span class="text-gold-500 text-xs"><i class="fas fa-circle"></i></span></li>
+                            <li class="flex justify-between items-center font-medium text-spa-dark mt-4">European Facials</li>
+                        </ul>
+                        <p class="text-sm text-gray-500 leading-relaxed italic border-l-2 border-gray-200 pl-3">
+                            Featuring Dermatek technology. Vacuum and suction out deeply embedded dirt, grease, and impurities. Clinically improves skin elasticity and reduces micro-wrinkles.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Specialties (Keratin) -->
+        <section id="specialties" class="py-0 flex flex-col lg:flex-row bg-white">
+            <div class="w-full lg:w-1/2 min-h-[400px] relative">
+                <img src="./assets/images/facial_room.png" alt="Facial Room" class="absolute inset-0 w-full h-full object-cover" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'100%\' height=\'100%\'><rect width=\'100%\' height=\'100%\' fill=\'%23f3f4f6\'/><text x=\'50%\' y=\'50%\' font-family=\'sans-serif\' font-size=\'20\' fill=\'%239ca3af\' text-anchor=\'middle\'>Treatment Room</text></svg>'">
+            </div>
+            <div class="w-full lg:w-1/2 p-12 lg:p-24 flex flex-col justify-center bg-spa-dark text-white">
+                <h2 class="text-gold-400 font-sans tracking-widest uppercase text-sm mb-3">Signature Treatment</h2>
+                <h3 class="text-4xl font-serif mb-2">Keratin Complex</h3>
+                <p class="text-xl font-light italic text-gray-300 mb-8">"Get Straight, Get Smooth, Get Sexy!"</p>
+                
+                <p class="text-gray-300 font-light leading-relaxed mb-8">
+                    Experience the transformative power of our Keratin Complex Smoothing Therapy. Designed to rejuvenate your hair from the inside out.
+                </p>
+                
+                <ul class="space-y-4 mb-8">
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-gold-400 mt-1 mr-4"></i>
+                        <span class="font-light">Eliminates up to 95% of frizz and curl</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-gold-400 mt-1 mr-4"></i>
+                        <span class="font-light">Smooths, softens, and completely rejuvenates hair</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-gold-400 mt-1 mr-4"></i>
+                        <span class="font-light">Safe and effective for all hair types</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-gold-400 mt-1 mr-4"></i>
+                        <span class="font-light">Dramatically reduces daily styling time</span>
+                    </li>
+                </ul>
+                <a href="#contact" class="inline-block px-8 py-3 border border-gold-400 text-gold-400 hover:bg-gold-400 hover:text-spa-dark transition-colors uppercase tracking-widest text-sm text-center w-max">Book Consultation</a>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products" class="py-24 bg-spa-light border-b border-gray-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-gold-500 font-sans tracking-widest uppercase text-sm mb-2">Premium Retail</h2>
+                    <h3 class="text-4xl font-serif text-spa-dark">Professional Products</h3>
+                    <div class="w-24 h-1 bg-gold-500 mx-auto mt-6"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div class="order-2 md:order-1">
+                        <h4 class="text-2xl font-serif text-spa-dark mb-4">Hair Care & Styling</h4>
+                        <p class="text-gray-600 font-light mb-6 leading-relaxed">
+                            Maintain your salon-fresh look at home. We carry an extensive line of premium hair care products to suit every need and style.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-8">
+                            <span class="px-3 py-1 bg-white border border-gray-200 text-sm text-gray-700">Matrix</span>
+                            <span class="px-3 py-1 bg-white border border-gray-200 text-sm text-gray-700">Biosilk</span>
+                            <span class="px-3 py-1 bg-white border border-gray-200 text-sm text-gray-700">Biomega</span>
+                            <span class="px-3 py-1 bg-white border border-gray-200 text-sm text-gray-700">Joico</span>
+                            <span class="px-3 py-1 bg-white border border-gray-200 text-sm text-gray-700">Kenra</span>
+                            <span class="px-3 py-1 bg-white border border-gray-200 text-sm text-gray-700">Paul Mitchell</span>
+                            <span class="px-3 py-1 bg-white border border-gray-200 text-sm text-gray-700">Redken</span>
+                            <span class="px-3 py-1 bg-white border border-gray-200 text-sm text-gray-700">Bigsexy</span>
+                            <span class="px-3 py-1 bg-white border border-gray-200 text-sm text-gray-700">Bed Head</span>
+                            <span class="px-3 py-1 bg-white border border-gray-200 text-sm text-gray-700">Catwalk</span>
+                            <span class="px-3 py-1 bg-white border border-gray-200 text-sm text-gray-700">Rockaholic</span>
+                            <span class="px-3 py-1 bg-white border border-gray-200 text-sm text-gray-700">Tigi</span>
+                            <span class="px-3 py-1 bg-white border border-gray-200 text-sm text-gray-700">Tea Tree (Men)</span>
+                        </div>
+                        
+                        <h4 class="text-2xl font-serif text-spa-dark mb-4 mt-10">Tools & Accessories</h4>
+                        <p class="text-gray-600 font-light mb-4 leading-relaxed">
+                            Various CHI Strainers, CHI Turbo Blow Dryers, Hot Shot tools, Aromas, Bath Salts, Bath Oils, and curated Gift Packages.
+                        </p>
+                    </div>
+                    
+                    <div class="order-1 md:order-2 grid grid-cols-2 gap-4">
+                        <img src="./assets/images/cosmetics_1.png" alt="Cosmetics Line 1" class="w-full h-64 object-cover rounded-sm shadow-md" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'100%\' height=\'100%\'><rect width=\'100%\' height=\'100%\' fill=\'%23e5e7eb\'/><text x=\'50%\' y=\'50%\' font-family=\'sans-serif\' font-size=\'16\' fill=\'%239ca3af\' text-anchor=\'middle\'>Product Display</text></svg>'">
+                        <img src="./assets/images/cosmetics_2.png" alt="Cosmetics Line 2" class="w-full h-64 object-cover rounded-sm shadow-md mt-8" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'100%\' height=\'100%\'><rect width=\'100%\' height=\'100%\' fill=\'%23e5e7eb\'/><text x=\'50%\' y=\'50%\' font-family=\'sans-serif\' font-size=\'16\' fill=\'%239ca3af\' text-anchor=\'middle\'>Skin Care</text></svg>'">
+                    </div>
+                </div>
+
+                <!-- Skincare Highlight -->
+                <div class="mt-20 bg-white p-8 md:p-12 border border-gray-100 text-center relative overflow-hidden shadow-sm">
+                    <div class="relative z-10">
+                        <h4 class="text-xl md:text-2xl font-serif text-spa-dark mb-4">Rodan + Fields & Amway Skin Care</h4>
+                        <p class="text-gray-600 font-light max-w-3xl mx-auto leading-relaxed mb-6">
+                            No matter your age, gender, skin tone, or ethnicity, Rodan + Fields helps you achieve healthier, younger-looking skin. We are also proud to be your local Amway consultant!
+                        </p>
+                        <span class="inline-block text-gold-500 italic font-serif">A variety of skin care products available in-store.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location & Contact -->
+        <section id="contact" class="py-0 flex flex-col lg:flex-row bg-white">
+            <div class="w-full lg:w-1/2 p-12 lg:p-24 flex flex-col justify-center bg-gray-50">
+                <h2 class="text-gold-500 font-sans tracking-widest uppercase text-sm mb-3">Visit Us</h2>
+                <h3 class="text-4xl font-serif text-spa-dark mb-8">We Look Forward To Seeing You</h3>
+                
+                <div class="space-y-6">
+                    <div class="flex items-start">
+                        <div class="w-12 text-gold-500 text-xl"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h5 class="font-bold text-spa-dark mb-1">Address</h5>
+                            <p class="text-gray-600 font-light">107 N. Main St<br>Nashville, AR 71852</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="w-12 text-gold-500 text-xl"><i class="fas fa-phone-alt"></i></div>
+                        <div>
+                            <h5 class="font-bold text-spa-dark mb-1">Phone</h5>
+                            <p class="text-gray-600 font-light">
+                                <a href="tel:+18708451999" class="hover:text-gold-500 transition-colors">(870) 845-1999</a><br>
+                                <a href="tel:+18702000630" class="hover:text-gold-500 transition-colors">(870) 200-0630</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="w-12 text-gold-500 text-xl"><i class="fas fa-globe"></i></div>
+                        <div>
+                            <h5 class="font-bold text-spa-dark mb-1">Website</h5>
+                            <p class="text-gray-600 font-light">
+                                <a href="http://www.asianimagedayspa.com" target="_blank" rel="noopener noreferrer" class="hover:text-gold-500 transition-colors">www.asianimagedayspa.com</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full lg:w-1/2 min-h-[400px] relative">
+                <img src="./assets/images/outside.png" alt="Salon Exterior" class="absolute inset-0 w-full h-full object-cover" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'100%\' height=\'100%\'><rect width=\'100%\' height=\'100%\' fill=\'%23d1d5db\'/><text x=\'50%\' y=\'50%\' font-family=\'sans-serif\' font-size=\'20\' fill=\'%236b7280\' text-anchor=\'middle\'>Storefront Image</text></svg>'">
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-spa-dark text-white pt-16 pb-8 border-t-4 border-gold-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+                <div>
+                    <img src="./assets/images/logo.png" alt="Logo" class="h-12 w-auto mb-6 bg-white p-2 rounded-sm hidden" onload="this.classList.remove('hidden')" onerror="this.style.display='none'">
+                    <h3 class="text-2xl font-serif mb-4">Asian Image</h3>
+                    <p class="text-gray-400 font-light text-sm leading-relaxed max-w-xs">
+                        Your premier destination for luxury salon and day spa services in Nashville, Arkansas.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-6 uppercase tracking-widest text-gold-400">Quick Links</h4>
+                    <ul class="space-y-3 font-light text-gray-400 text-sm">
+                        <li><a href="#about" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Menu of Services</a></li>
+                        <li><a href="#specialties" class="hover:text-white transition-colors">Keratin Complex</a></li>
+                        <li><a href="#products" class="hover:text-white transition-colors">Professional Products</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-6 uppercase tracking-widest text-gold-400">Hours</h4>
+                    <ul class="space-y-3 font-light text-gray-400 text-sm">
+                        <li class="flex justify-between border-b border-gray-700 pb-2">
+                            <span>Sunday - Tuesday</span>
+                            <span>Closed</span>
+                        </li>
+                        <li class="flex justify-between border-b border-gray-700 pb-2">
+                            <span>Wed - Sat (Salon)</span>
+                            <span>Call for appt.</span>
+                        </li>
+                        <li class="flex justify-between pb-2 text-gold-400">
+                            <span>Green Banana</span>
+                            <span>11:00 AM - Close</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center pt-8 border-t border-gray-800 text-sm text-gray-500 font-light flex flex-col md:flex-row justify-between items-center">
+                <p>&copy; <script>document.write(new Date().getFullYear())</script> Asian Image Salon and Day Spa. All rights reserved.</p>
+                <p class="mt-2 md:mt-0">107 N. Main St, Nashville AR 71852</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const icon = btn.querySelector('i');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            if(menu.classList.contains('hidden')) {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            } else {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            }
+        });
+
+        // Close mobile menu on click
+        const mobileLinks = menu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            });
+        });
+
+        // Navbar Scroll Effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                navbar.classList.add('shadow-md');
+                navbar.style.background = 'rgba(255, 255, 255, 0.98)';
+            } else {
+                navbar.classList.remove('shadow-md');
+                navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+            }
+        });
+    </script>
+</body>
+</html>
